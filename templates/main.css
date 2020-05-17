@@ -1,3 +1,8 @@
+@font-face {
+  font-family: 'Pangolin';
+  src: url('./Pangolin-Regular.ttf');
+}
+
 body {
   background-image: url('Flute.jpg');
   z-index: -1;
@@ -27,9 +32,11 @@ body {
 }
 
 .content {
-  margin-top: 20px;
+  text-align: center;
   margin-left: 50px;
   margin-right: 50px;
+  font-family: 'Pangolin';
+  font-size: 1.5em;
 }
 
 .img-profile {
@@ -37,4 +44,39 @@ body {
   border-radius: 50%;
   margin-left: 50%;
   margin-right: 50%;
+  margin-top: 10%;
+}
+
+.balls{
+  border-radius: 50%;
+  background: linear-gradient(35deg,black,black);
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin-top: 50px;
+}
+#ball1 {
+  right: 15%;
+  top: 15%;
+  transform: scale(0.7);
+}
+#ball2 {
+  left: 25%;
+  top: 10%;
+  transform: scale(0.9);
+}
+#ball3 {
+  top: 60%;
+  right: 10%;
+  transform: scale(1);
+}
+#ball4 {
+  left: 55%;
+  bottom:10%;
+  transform: scale(0.8);
+}
+#ball5 {
+  bottom: 25%;
+  left: 10%;
+  transform: scale(0.7);
 }
