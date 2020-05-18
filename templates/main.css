@@ -5,13 +5,13 @@
 
 body {
   background-image: url('Flute.jpg');
-  z-index: -1;
+  z-index: -2;
 }
 
 #flute-overlay {
   position: fixed;
   overflow: scroll;
-  z-index: 0;
+  z-index: -1;
   width: 100%;
   height: 100%;
   animation-name: dreamy;
@@ -49,7 +49,6 @@ body {
 
 .balls{
   border-radius: 50%;
-  background: linear-gradient(35deg,black,black);
   position: absolute;
   width: 20px;
   height: 20px;
@@ -59,24 +58,54 @@ body {
   right: 15%;
   top: 15%;
   transform: scale(0.7);
+  background: black
+}
+#ball1:hover {
+  transform: scale(20);
+  background: burlywood;
+  opacity: 0.6;
 }
 #ball2 {
   left: 25%;
   top: 10%;
   transform: scale(0.9);
+  background: black
+}
+#ball2:hover {
+  transform: scale(25);
+  background: beige;
+  opacity: 0.6;
 }
 #ball3 {
-  top: 60%;
+  bottom: 20%;
   right: 10%;
-  transform: scale(1);
+  transform: scale(0.9);
+  background: black;
+}
+#ball3:hover {
+  transform: scale(20);
+  background: lavender;
+  opacity: 0.6;
 }
 #ball4 {
   left: 55%;
-  bottom:10%;
+  bottom: 10%;
   transform: scale(0.8);
+  background: black;
+}
+#ball4:hover {
+  transform: scale(25);
+  background: lightseagreen;
+  opacity: 0.6;
 }
 #ball5 {
   bottom: 25%;
-  left: 10%;
+  left: 15%;
   transform: scale(0.7);
+  background: black;
+}
+#ball5:hover {
+  transform: scale(20);
+  background: pink;
+  opacity: 0.6;
 }
