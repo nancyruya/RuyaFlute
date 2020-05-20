@@ -8,6 +8,15 @@ body {
   z-index: -2;
 }
 
+.content {
+  text-align: center;
+  font-family: 'Pangolin';
+  font-weight: bold;
+  margin-left: 15%;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
 #flute-overlay {
   position: fixed;
   overflow: scroll;
@@ -31,30 +40,16 @@ body {
   }
 }
 
-/*
-.content {
-  text-align: center;
-  margin-left: 50px;
-  margin-right: 50px;
-  font-family: 'Pangolin';
-  font-size: 1.5em;
-}
-*/
-
 .img-profile {
   width: 15%;
   border-radius: 50%;
   margin-left: 50%;
   margin-right: 50%;
   margin-top: 10%;
+  cursor:none;
 }
 .img-profile:hover {
-  content: attr(data-text);
-  font-family: 'Pangolin';
-  font-size: 3px;
-  position: absolute;
-  left: 20%;
-  bottom: 35%;
+  transform: scale(0);
 }
 
 .balls{
@@ -63,6 +58,7 @@ body {
   width: 20px;
   height: 20px;
   margin-top: 50px;
+  cursor:help;
 }
 
 #ball1 {
@@ -82,10 +78,11 @@ body {
 #ball1:hover:after {
     content: attr(data-text);
     font-family: 'Pangolin';
-    font-size: 3px;
+    color: white;
+    font-size: 1.40px;
     position: absolute;
-    left: 20%;
-    bottom: 35%;
+    left: 25%;
+    bottom: 45%;
 }
 
 #ball2 {
@@ -94,6 +91,7 @@ body {
   transform: scale(0.9);
   background: black;
   transition: 0.5s;
+  cursor:help;
 }
 
 #ball2:hover {
@@ -102,12 +100,23 @@ body {
   opacity: 0.6;
 }
 
+#ball2:hover:after {
+  content: attr(data-text);
+  font-family: 'Pangolin';
+  color: rgb(0, 0, 0);
+  font-size: 3px;
+  position: absolute;
+  left: 10%;
+  bottom: 40%;
+}
+
 #ball3 {
   bottom: 20%;
   right: 10%;
   transform: scale(0.9);
   background: black;
   transition: 0.5s;
+  cursor:help;
 }
 
 #ball3:hover {
@@ -116,12 +125,23 @@ body {
   opacity: 0.6;
 }
 
+#ball3:hover:after {
+  content: attr(data-text);
+  font-family: 'Pangolin';
+  color: purple;
+  font-size: 1.3px;
+  position: absolute;
+  left: 10%;
+  bottom: 40%;
+}
+
 #ball4 {
   left: 55%;
   bottom: 10%;
   transform: scale(0.8);
   background: black;
   transition: 0.5s;
+  cursor:help;
 }
 
 #ball4:hover {
@@ -130,12 +150,23 @@ body {
   opacity: 0.6;
 }
 
+#ball4:hover:after {
+  content: attr(data-text);
+  font-family: 'Pangolin';
+  color: rgb(252, 38, 109);
+  font-size: 1.3px;
+  position: absolute;
+  left: 10%;
+  bottom: 50%;
+}
+
 #ball5 {
   bottom: 25%;
   left: 15%;
   transform: scale(0.7);
   background: black;
   transition: 0.5s;
+  cursor:help;
 }
 
 #ball5:hover {
@@ -148,8 +179,8 @@ body {
   content: attr(data-text);
   font-family: 'Pangolin';
   color: darkred;
-  font-size: 1.5px;
+  font-size: 1.3px;
   position: absolute;
   left: 10%;
-  bottom: 18%;
+  bottom: 40%;
 }
