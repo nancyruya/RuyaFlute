@@ -1,0 +1,193 @@
+@font-face {
+  font-family: 'Pangolin';
+  src: url('./Pangolin-Regular.ttf');
+}
+
+body {
+  background-image: url('Flute.jpg');
+  z-index: -2;
+}
+
+.content {
+  text-align: center;
+  font-family: 'Pangolin';
+  font-weight: bold;
+  margin-left: 15%;
+  font-size: 1.5em;
+  cursor: pointer;
+}
+
+#flute-overlay {
+  position: fixed;
+  overflow: scroll;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  animation-name: dreamy;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes dreamy {
+  0% {
+    background-color: rgba(245, 216, 238, 0.8);
+  }
+  80% {
+    background-color: rgba(180, 180, 180, 0.8);
+  }
+  100% {
+    background-color: rgba(245, 216, 238, 0.8);
+  }
+}
+
+.img-profile {
+  width: 15%;
+  border-radius: 50%;
+  margin-left: 50%;
+  margin-right: 50%;
+  margin-top: 10%;
+  cursor:none;
+}
+.img-profile:hover {
+  transform: scale(0);
+}
+
+.balls{
+  border-radius: 50%;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin-top: 50px;
+  cursor:help;
+}
+
+#ball1 {
+  right: 15%;
+  top: 15%;
+  transform: scale(0.7);
+  background: black;
+  transition: 0.5s;
+}
+
+#ball1:hover {
+  transform: scale(20);
+  background: burlywood;
+  opacity: 0.6;
+}
+
+#ball1:hover:after {
+    content: attr(data-text);
+    font-family: 'Pangolin';
+    color: white;
+    font-size: 1.40px;
+    position: absolute;
+    left: 25%;
+    bottom: 45%;
+}
+
+#ball2 {
+  left: 25%;
+  top: 10%;
+  transform: scale(0.9);
+  background: black;
+  transition: 0.5s;
+  cursor:help;
+}
+
+#ball2:hover {
+  transform: scale(25);
+  background: beige;
+  opacity: 0.6;
+}
+.social-icon {
+  visibility: visible;
+  transform: scale(0.1);
+  height: 28px;
+}
+
+#ball2:hover:after{
+  content: attr(data-text);
+  font-family: 'Pangolin';
+  color: rgb(0, 0, 0);
+  font-size: 1.3px;
+  position: absolute;
+  left: 10%;
+  bottom: 40%;
+}
+
+
+#ball3 {
+  bottom: 20%;
+  right: 10%;
+  transform: scale(0.9);
+  background: black;
+  transition: 0.5s;
+  cursor:help;
+}
+
+#ball3:hover {
+  transform: scale(20);
+  background: rgb(195, 195, 240);
+  opacity: 0.6;
+}
+
+#ball3:hover:after {
+  content: attr(data-text);
+  font-family: 'Pangolin';
+  color: purple;
+  font-size: 1.3px;
+  position: absolute;
+  left: 10%;
+  bottom: 40%;
+}
+
+#ball4 {
+  left: 55%;
+  bottom: 10%;
+  transform: scale(0.8);
+  background: black;
+  transition: 0.5s;
+  cursor:help;
+}
+
+#ball4:hover {
+  transform: scale(25);
+  background: lightseagreen;
+  opacity: 0.6;
+}
+
+
+#ball4:hover:after {
+  content: attr(data-text);
+  font-family: 'Pangolin';
+  color: rgb(252, 38, 109);
+  font-size: 1.3px;
+  position: absolute;
+  left: 10%;
+  bottom: 50%;
+}
+
+#ball5 {
+  bottom: 25%;
+  left: 15%;
+  transform: scale(0.7);
+  background: black;
+  transition: 0.5s;
+  cursor:help;
+}
+
+#ball5:hover {
+  transform: scale(20);
+  background: pink;
+  opacity: 0.6;
+}
+
+#ball5:hover:after {
+  content: attr(data-text);
+  font-family: 'Pangolin';
+  color: darkred;
+  font-size: 1.3px;
+  position: absolute;
+  left: 5%;
+  bottom: 20%;
+}
